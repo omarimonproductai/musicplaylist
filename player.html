@@ -186,7 +186,8 @@
       <button class="ctrl-btn" id="btn-font-down" title="Reduir lletra">A&#8722;</button>
       <button class="ctrl-btn" id="btn-font-up"   title="Augmentar lletra">A+</button>
       <div class="sep"></div>
-      <a class="back" id="btn-back" href="#">&#8592; Playlist</a>
+      <button class="ctrl-btn" id="btn-share" title="Compartir can&#231;&#243;">&#128228;</button>
+      <a class="back" id="btn-back" href="#" title="Torna a la playlist">&#8592;</a>
     </div>
   </div>
   <div id="lyrics-container">
@@ -216,6 +217,7 @@
     const btnLrc          = document.getElementById('btn-lrc');
     const btnFontUp       = document.getElementById('btn-font-up');
     const btnFontDown     = document.getElementById('btn-font-down');
+    const btnShare        = document.getElementById('btn-share');
     const btnBack         = document.getElementById('btn-back');
     const lyricsEl        = document.getElementById('lyrics');
     const lyricsContainer = document.getElementById('lyrics-container');
@@ -246,6 +248,26 @@
     btnYoutube.addEventListener('click', () => {
       const song = playlist[currentIdx];
       if (song && song.youtube) window.open(song.youtube, '_blank', 'noopener');
+    });
+
+    // ── share ──────────────────────────────────────────────────────────────
+    btnShare.addEventListener('click', async () => {
+      const url = location.href;
+      const shareText = 'Crec que aquesta cançó et pot agradar ' + url;
+      if (navigator.share) {
+        try {
+          await navigator.share({ text: shareText });
+        } catch (e) {
+          // cancelled or error — do nothing
+        }
+      } else {
+        try {
+          await navigator.clipboard.writeText(shareText);
+          alert('Enllaç copiat al porta-retalls!');
+        } catch {
+          prompt('Copia aquest text:', shareText);
+        }
+      }
     });
 
     // ── plain lyrics ───────────────────────────────────────────────────────
