@@ -222,7 +222,7 @@
 
     if (playlistName) btnBack.href = `playlist.html?playlist=${playlistName}`;
 
-    // ── font size ──────────────────────────────────────────────────────────
+    // ── font size ─────────────────────────────────────────────────────────
     const FONT_SIZES = [0.82, 0.91, 1.0, 1.12, 1.26, 1.42, 1.6];
     let fontIdx = 2;
     function applyFontSize() {
@@ -257,7 +257,7 @@
         const resp = await fetch(url);
         if (!resp.ok) throw new Error();
         lyricsEl.className = '';
-        lyricsEl.textContent = await resp.text();
+        lyricsEl.textContent = (await resp.text()).trimEnd() + '\n\n\n';
       } catch {
         lyricsEl.className = 'loading';
         lyricsEl.textContent = "No s'ha pogut carregar la lletra.";
