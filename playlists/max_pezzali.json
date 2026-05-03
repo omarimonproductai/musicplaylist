@@ -3,7 +3,7 @@
     "songs":  [
                   {
                       "num":  "01",
-                      "title":  "Hanno ucciso l\u0027Uomo Ragno",
+                      "title":  "Hanno ucciso l'Uomo Ragno",
                       "artist":  "Max Pezzali",
                       "audio":  "https://res.cloudinary.com/dmtnhepkp/video/upload/v1777735583/Hanno%20ucciso%20l%27Uomo%20Ragno.mp4",
                       "lyrics":  "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1777735681/Hanno%20ucciso%20l%27Uomo%20Ragno.txt",
@@ -12,7 +12,7 @@
                   },
                   {
                       "num":  "02",
-                      "title":  "S\u0027inkazza (Questa casa non Ã¨ un albergo)",
+                      "title":  "S'inkazza (Questa casa non è un albergo)",
                       "artist":  "Max Pezzali",
                       "audio":  "https://res.cloudinary.com/dmtnhepkp/video/upload/v1777735585/S%27inkazza%20%28Questa%20casa%20non%20%C3%A8%20un%20albergo%29.mp4",
                       "lyrics":  "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1777735680/S%27inkazza%20%28Questa%20casa%20non%20e%20un%20albergo%29.txt",
@@ -39,7 +39,7 @@
                   },
                   {
                       "num":  "05",
-                      "title":  "Un giorno cosÃ¬",
+                      "title":  "Un giorno così",
                       "artist":  "Max Pezzali",
                       "audio":  "https://res.cloudinary.com/dmtnhepkp/video/upload/v1777735584/Un%20giorno%20cos%C3%AC.mp4",
                       "lyrics":  "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1777735678/Un%20giorno%20cosi.txt",
@@ -102,7 +102,7 @@
                   },
                   {
                       "num":  "12",
-                      "title":  "La regola dell\u0027amico",
+                      "title":  "La regola dell'amico",
                       "artist":  "Max Pezzali",
                       "audio":  "https://res.cloudinary.com/dmtnhepkp/video/upload/v1777735584/La%20regola%20dell%27amico.mp4",
                       "lyrics":  "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1777735672/La%20regola%20dell%27amico.txt",
@@ -111,7 +111,7 @@
                   },
                   {
                       "num":  "13",
-                      "title":  "L\u0027universo tranne noi",
+                      "title":  "L'universo tranne noi",
                       "artist":  "Max Pezzali",
                       "audio":  "https://res.cloudinary.com/dmtnhepkp/video/upload/v1777736790/L%27universo%20tranne%20noi.mp4",
                       "lyrics":  "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1777735671/L%27universo%20tranne%20noi.txt",
@@ -120,7 +120,7 @@
                   },
                   {
                       "num":  "14",
-                      "title":  "Una canzone d\u0027amore",
+                      "title":  "Una canzone d'amore",
                       "artist":  "Max Pezzali",
                       "audio":  "https://res.cloudinary.com/dmtnhepkp/video/upload/v1777735584/Una%20canzone%20d%27amore.mp4",
                       "lyrics":  "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1777735670/Una%20canzone%20d%27amore.txt",
@@ -147,7 +147,7 @@
                   },
                   {
                       "num":  "17",
-                      "title":  "Ci sono anch\u0027io",
+                      "title":  "Ci sono anch'io",
                       "artist":  "Max Pezzali",
                       "audio":  "https://res.cloudinary.com/dmtnhepkp/video/upload/v1777736794/Ci%20sono%20anch%27io.mp4",
                       "lyrics":  "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1777735667/Ci%20sono%20anch%27io.txt",
