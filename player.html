@@ -247,8 +247,16 @@
     });
 
     // ── share ──────────────────────────────────────────────────────────────
+    function getShareUrl() {
+      const url = new URL('player.html', location.href);
+      url.search = '';
+      if (playlistName) url.searchParams.set('playlist', playlistName);
+      url.searchParams.set('idx', String(currentIdx));
+      return url.href;
+    }
+
     btnShare.addEventListener('click', async () => {
-      const url = location.href;
+      const url = getShareUrl();
       const shareText = 'Crec que aquesta cançó et pot agradar. Tens la lletra, versió karaoke i link al video - ' + url;
       if (navigator.share) {
         try {
