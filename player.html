@@ -68,17 +68,18 @@
     .controls {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       flex-wrap: nowrap;
       justify-content: center;
+      width: 100%;
     }
-    .sep { width: 1px; height: 16px; background: var(--header-border); margin: 0 2px; flex-shrink: 0; }
+    .sep { width: 1px; height: 16px; background: var(--header-border); margin: 0 1px; flex-shrink: 0; }
     .ctrl-btn {
       background: none;
       border: 1px solid var(--btn);
       color: var(--btn);
-      font-size: 0.78rem;
-      padding: 4px 10px;
+      font-size: 0.75rem;
+      padding: 4px 8px;
       border-radius: 20px;
       cursor: pointer;
       transition: background 0.18s, color 0.18s, border-color 0.3s;
@@ -91,9 +92,9 @@
     .back {
       color: var(--back);
       text-decoration: none;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       border: 1px solid var(--back);
-      padding: 4px 10px;
+      padding: 4px 8px;
       border-radius: 20px;
       transition: background 0.18s, color 0.18s, border-color 0.3s;
       white-space: nowrap;
@@ -141,7 +142,7 @@
       <button class="ctrl-btn" id="btn-next">&#9654;&#9654;</button>
       <div class="sep"></div>
       <button class="ctrl-btn" id="btn-theme" title="Mode dia / nit">☀️</button>
-      <button class="ctrl-btn" id="btn-youtube" title="Veure vídeo a YouTube">▶ YouTube</button>
+      <button class="ctrl-btn" id="btn-youtube" title="Veure vídeo">▶ Video</button>
       <div class="sep"></div>
       <button class="ctrl-btn" id="btn-font-down" title="Reduir lletra">A−</button>
       <button class="ctrl-btn" id="btn-font-up"   title="Augmentar lletra">A+</button>
@@ -281,7 +282,7 @@
       } catch {
         document.getElementById('title').textContent = 'Error carregant la playlist';
         lyricsEl.className = 'loading';
-        lyricsEl.textContent = 'No s\'ha pogut carregar la playlist.';
+        lyricsEl.textContent = "No s'ha pogut carregar la playlist.";
       }
     }
 
