@@ -249,7 +249,7 @@
     // ── share ──────────────────────────────────────────────────────────────
     btnShare.addEventListener('click', async () => {
       const url = location.href;
-      const shareText = 'Crec que aquesta cançó et pot agradar ' + url;
+      const shareText = 'Crec que aquesta cançó et pot agradar. Tens la lletra, versió karaoke i link al video - ' + url;
       if (navigator.share) {
         try {
           await navigator.share({ text: shareText });
