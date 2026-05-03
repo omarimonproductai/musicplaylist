@@ -89,6 +89,10 @@
     }
     .ctrl-btn:hover:not(:disabled) { background: var(--btn-hover-bg); color: var(--btn-hover-fg); }
     .ctrl-btn:disabled { opacity: 0.22; cursor: default; }
+    .ctrl-btn.active {
+      background: var(--btn-hover-bg);
+      color: var(--btn-hover-fg);
+    }
     .back {
       color: var(--back);
       text-decoration: none;
@@ -101,6 +105,8 @@
       flex-shrink: 0;
     }
     .back:hover { background: var(--back-hover-bg); color: var(--back-hover-fg); }
+
+    /* ── lyrics / karaoke container ── */
     #lyrics-container { flex: 1; overflow-y: auto; padding: 24px 24px 48px; }
     #lyrics {
       white-space: pre-wrap;
@@ -112,6 +118,38 @@
       transition: font-size 0.2s, color 0.3s;
     }
     #lyrics.loading { color: var(--loading); font-style: italic; }
+
+    /* ── karaoke mode ── */
+    #lyrics.lrc-mode {
+      white-space: normal;
+      text-align: center;
+      padding: 45vh 0 45vh;
+      line-height: 1;
+    }
+    .lrc-line {
+      padding: 8px 20px;
+      transition: opacity 0.35s ease, font-size 0.35s ease, color 0.35s ease, font-weight 0.2s ease;
+    }
+    .lrc-line.lrc-future {
+      font-size: 0.88em;
+      opacity: 0.5;
+      color: var(--lyrics);
+      font-weight: 400;
+    }
+    .lrc-line.lrc-current {
+      font-size: 1.18em;
+      opacity: 1;
+      color: var(--title);
+      font-weight: 700;
+    }
+    .lrc-line.lrc-past {
+      font-size: 0.82em;
+      opacity: 0.28;
+      color: var(--lyrics);
+      font-weight: 400;
+    }
+
+    /* ── tap overlay ── */
     #tap-overlay {
       display: none;
       position: fixed;
@@ -141,10 +179,11 @@
       <button class="ctrl-btn" id="btn-prev">&#9664;&#9664;</button>
       <button class="ctrl-btn" id="btn-next">&#9654;&#9654;</button>
       <div class="sep"></div>
-      <button class="ctrl-btn" id="btn-theme" title="Mode dia / nit">☀️</button>
-      <button class="ctrl-btn" id="btn-youtube" title="Veure vídeo">▶ Video</button>
+      <button class="ctrl-btn" id="btn-theme" title="Mode dia / nit">&#9728;&#65039;</button>
+      <button class="ctrl-btn" id="btn-youtube" title="Veure v&#237;deo">&#9654; Video</button>
+      <button class="ctrl-btn" id="btn-lrc" title="Mode karaoke">&#127908;</button>
       <div class="sep"></div>
-      <button class="ctrl-btn" id="btn-font-down" title="Reduir lletra">A−</button>
+      <button class="ctrl-btn" id="btn-font-down" title="Reduir lletra">A&#8722;</button>
       <button class="ctrl-btn" id="btn-font-up"   title="Augmentar lletra">A+</button>
       <div class="sep"></div>
       <a class="back" id="btn-back" href="#">&#8592; Playlist</a>
@@ -154,7 +193,7 @@
     <div id="lyrics" class="loading">Carregant...</div>
   </div>
   <div id="tap-overlay">
-    <div id="tap-icon">▶️</div>
+    <div id="tap-icon">&#9654;&#65039;</div>
     <div id="tap-label">Toca per reproduir</div>
   </div>
 
@@ -174,16 +213,16 @@
     const btnNext         = document.getElementById('btn-next');
     const btnTheme        = document.getElementById('btn-theme');
     const btnYoutube      = document.getElementById('btn-youtube');
+    const btnLrc          = document.getElementById('btn-lrc');
     const btnFontUp       = document.getElementById('btn-font-up');
     const btnFontDown     = document.getElementById('btn-font-down');
     const btnBack         = document.getElementById('btn-back');
     const lyricsEl        = document.getElementById('lyrics');
     const lyricsContainer = document.getElementById('lyrics-container');
 
-    // Back link points to the playlist page
     if (playlistName) btnBack.href = `playlist.html?playlist=${playlistName}`;
 
-    // Font size
+    // ── font size ──────────────────────────────────────────────────────────
     const FONT_SIZES = [0.82, 0.91, 1.0, 1.12, 1.26, 1.42, 1.6];
     let fontIdx = 2;
     function applyFontSize() {
@@ -195,22 +234,21 @@
     btnFontDown.addEventListener('click', () => { if (fontIdx > 0) { fontIdx--; applyFontSize(); } });
     applyFontSize();
 
-    // Day / Night
+    // ── day / night ────────────────────────────────────────────────────────
     let isDay = false;
     btnTheme.addEventListener('click', () => {
       isDay = !isDay;
       document.body.classList.toggle('day', isDay);
-      btnTheme.textContent = isDay ? '🌙' : '☀️';
+      btnTheme.innerHTML = isDay ? '&#127769;' : '&#9728;&#65039;';
     });
 
+    // ── youtube ────────────────────────────────────────────────────────────
     btnYoutube.addEventListener('click', () => {
       const song = playlist[currentIdx];
-      if (song && song.youtube) {
-        window.open(song.youtube, '_blank', 'noopener');
-      }
+      if (song && song.youtube) window.open(song.youtube, '_blank', 'noopener');
     });
 
-    // Lyrics loader
+    // ── plain lyrics ───────────────────────────────────────────────────────
     async function loadLyrics(url) {
       lyricsEl.className = 'loading';
       lyricsEl.textContent = 'Carregant lletra...';
@@ -226,6 +264,91 @@
       }
     }
 
+    // ── karaoke (LRC) ──────────────────────────────────────────────────────
+    let lrcMode   = false;
+    let lrcLines  = [];   // [{time: seconds, text}]
+    let lrcActive = -1;
+
+    function parseLrc(text) {
+      const lines = [];
+      for (const raw of text.split('\n')) {
+        const m = raw.trim().match(/^\[(\d{1,2}):(\d{2})[.,](\d{2,3})\](.*)$/);
+        if (!m) continue;
+        const time = parseInt(m[1]) * 60 + parseInt(m[2]) + parseInt(m[3].padEnd(3, '0')) / 1000;
+        const lyric = m[4].trim();
+        if (lyric) lines.push({ time, text: lyric });
+      }
+      return lines.sort((a, b) => a.time - b.time);
+    }
+
+    function renderLrc() {
+      lyricsEl.className = 'lrc-mode';
+      lyricsEl.innerHTML = '';
+      lrcLines.forEach(line => {
+        const div = document.createElement('div');
+        div.className = 'lrc-line lrc-future';
+        div.textContent = line.text;
+        lyricsEl.appendChild(div);
+      });
+      lrcActive = -1;
+      lyricsContainer.scrollTop = 0;
+    }
+
+    function updateLrcHighlight() {
+      if (!lrcMode || !lrcLines.length) return;
+      const t = audioEl.currentTime;
+      let idx = -1;
+      for (let i = 0; i < lrcLines.length; i++) {
+        if (lrcLines[i].time <= t) idx = i;
+        else break;
+      }
+      if (idx === lrcActive) return;
+      lrcActive = idx;
+      const divs = lyricsEl.querySelectorAll('.lrc-line');
+      divs.forEach((el, i) => {
+        el.className = 'lrc-line ' + (i < idx ? 'lrc-past' : i === idx ? 'lrc-current' : 'lrc-future');
+      });
+      if (idx >= 0 && divs[idx]) {
+        const el = divs[idx];
+        const target = el.offsetTop - lyricsContainer.clientHeight / 2 + el.offsetHeight / 2;
+        lyricsContainer.scrollTo({ top: target, behavior: 'smooth' });
+      }
+    }
+
+    async function loadLrcAndRender(url) {
+      lyricsEl.className = 'loading';
+      lyricsEl.textContent = 'Carregant karaoke...';
+      lyricsContainer.scrollTop = 0;
+      try {
+        const resp = await fetch(url);
+        if (!resp.ok) throw new Error();
+        lrcLines = parseLrc(await resp.text());
+        renderLrc();
+      } catch {
+        lyricsEl.className = 'loading';
+        lyricsEl.textContent = "No s'ha pogut carregar el karaoke.";
+        lrcMode = false;
+        btnLrc.classList.remove('active');
+      }
+    }
+
+    btnLrc.addEventListener('click', () => {
+      const song = playlist[currentIdx];
+      lrcMode = !lrcMode;
+      btnLrc.classList.toggle('active', lrcMode);
+      if (lrcMode) {
+        loadLrcAndRender(song.lrc);
+      } else {
+        lrcLines  = [];
+        lrcActive = -1;
+        if (song.lyrics) loadLyrics(song.lyrics);
+        else { lyricsEl.className = 'loading'; lyricsEl.textContent = 'Lletra no disponible.'; }
+      }
+    });
+
+    audioEl.addEventListener('timeupdate', updateLrcHighlight);
+
+    // ── navigation ─────────────────────────────────────────────────────────
     function updateNav() {
       btnPrev.disabled = currentIdx === 0;
       btnNext.disabled = currentIdx === playlist.length - 1;
@@ -234,9 +357,19 @@
     function loadSong(i) {
       currentIdx = i;
       const song = playlist[i];
+
+      // Reset LRC state; keep lrcMode if new song also has lrc
+      lrcLines  = [];
+      lrcActive = -1;
+      if (lrcMode && !song.lrc) {
+        lrcMode = false;
+        btnLrc.classList.remove('active');
+      }
+      btnLrc.disabled = !song.lrc;
+      btnYoutube.disabled = !song.youtube;
+
       document.title = song.title;
       document.getElementById('title').textContent = song.title;
-      btnYoutube.disabled = !song.youtube;
       history.replaceState(null, '', `player.html?playlist=${playlistName}&idx=${i}`);
       updateNav();
 
@@ -253,7 +386,9 @@
         return;
       }
 
-      if (song.lyrics) {
+      if (lrcMode && song.lrc) {
+        loadLrcAndRender(song.lrc);
+      } else if (song.lyrics) {
         loadLyrics(song.lyrics);
       } else {
         lyricsEl.className = 'loading';
@@ -265,13 +400,12 @@
     btnPrev.addEventListener('click', () => { if (currentIdx > 0) loadSong(currentIdx - 1); });
     btnNext.addEventListener('click', () => { if (currentIdx < playlist.length - 1) loadSong(currentIdx + 1); });
     audioEl.addEventListener('ended', () => {
-      // Skip to next available song
       let next = currentIdx + 1;
       while (next < playlist.length && !playlist[next].audio) next++;
       if (next < playlist.length) loadSong(next);
     });
 
-    // Init: fetch playlist then load song
+    // ── init ───────────────────────────────────────────────────────────────
     async function init() {
       try {
         const resp = await fetch(`playlists/${playlistName}.json`);
