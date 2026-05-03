@@ -5,33 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selecciona playlist</title>
   <link rel="icon" href="favicon.svg">
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #1a1a2e;
-      color: #e0e0e0;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1 { color: #a8d8ea; border-bottom: 2px solid #a8d8ea; padding-bottom: 10px; margin-bottom: 30px; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 10px 0; }
-    a {
-      display: block;
-      color: #f7cac9;
-      text-decoration: none;
-      font-size: 1.1rem;
-      padding: 12px 18px;
-      border: 1px solid #f7cac9;
-      border-radius: 8px;
-      transition: background 0.2s, color 0.2s;
-    }
-    a:hover { background: #f7cac9; color: #1a1a2e; }
-    .loading { color: #666; font-style: italic; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-selector">
   <h1>Playlists</h1>
   <ul id="list"><li class="loading">Carregant...</li></ul>
   <script>
