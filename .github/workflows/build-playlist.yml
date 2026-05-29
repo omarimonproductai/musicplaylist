@@ -1,0 +1,55 @@
+name: Build playlist
+
+# Uploads a playlist's media (from incoming/<slug>/) to Cloudinary and commits
+# the generated playlists/<slug>.json back to the repo. The Cloudinary
+# credentials are read from the repository Actions secrets, so they never leave
+# GitHub.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Playlist slug (folder name in incoming/ and JSON filename)"
+        required: true
+      title:
+        description: "Visible playlist title"
+        required: true
+      front:
+        description: "Add this playlist at the top of the selector"
+        type: boolean
+        default: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install cloudinary
+
+      - name: Upload to Cloudinary and generate JSON
+        env:
+          CLOUDINARY_CLOUD_NAME: dmtnhepkp
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+        run: |
+          python3 tools/build_playlist.py "${{ inputs.slug }}" --title "${{ inputs.title }}" ${{ inputs.front && '--front' || '' }}
+
+      - name: Commit generated playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add playlists/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Build playlist ${{ inputs.slug }}"
+            git push
+          fi
