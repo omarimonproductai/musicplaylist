@@ -47,9 +47,19 @@ def main():
     parser.add_argument("--title", required=True, help="Visible playlist title")
     args = parser.parse_args()
 
-    if not os.environ.get("CLOUDINARY_URL"):
-        sys.exit("CLOUDINARY_URL env var is required (cloudinary://key:secret@dmtnhepkp)")
-    cloudinary.config()  # reads CLOUDINARY_URL
+    if os.environ.get("CLOUDINARY_URL"):
+        cloudinary.config()  # reads CLOUDINARY_URL
+    elif os.environ.get("CLOUDINARY_API_KEY") and os.environ.get("CLOUDINARY_API_SECRET"):
+        cloudinary.config(
+            cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME", "dmtnhepkp"),
+            api_key=os.environ["CLOUDINARY_API_KEY"],
+            api_secret=os.environ["CLOUDINARY_API_SECRET"],
+        )
+    else:
+        sys.exit(
+            "Set CLOUDINARY_URL, or CLOUDINARY_API_KEY + CLOUDINARY_API_SECRET "
+            "(+ optional CLOUDINARY_CLOUD_NAME, default dmtnhepkp)"
+        )
 
     folder = os.path.join(ROOT, "incoming", args.slug)
     manifest = os.path.join(folder, "manifest.csv")
