@@ -23,6 +23,7 @@ import csv
 import glob
 import json
 import os
+import re
 import sys
 
 import cloudinary
@@ -31,9 +32,13 @@ import cloudinary.uploader
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def find_file(folder, num, ext):
-    matches = sorted(glob.glob(os.path.join(folder, f"{num}*{ext}")))
-    return matches[0] if matches else None
+def find_file(folder, num, exts, exclude=()):
+    for ext in exts:
+        for path in sorted(glob.glob(os.path.join(folder, f"{num}*{ext}"))):
+            if any(path.endswith(x) for x in exclude):
+                continue
+            return path
+    return None
 
 
 def upload(path, resource_type):
@@ -72,13 +77,16 @@ def main():
             num = row["num"].strip()
             song = {"num": num, "title": row["title"].strip(), "artist": row["artist"].strip()}
 
-            audio = find_file(folder, num, ".mp4")
+            audio = find_file(folder, num, [".mp4", ".m4a"])
             if audio:
-                song["audio"] = upload(audio, "video")
+                # player.html derives the playable URL by swapping .mp4 -> .mp3,
+                # so store the audio URL with a .mp4 extension (Cloudinary
+                # transcodes the source on delivery).
+                song["audio"] = re.sub(r"\.[A-Za-z0-9]+$", ".mp4", upload(audio, "video"))
             else:
                 print(f"  ! no audio for {num} {song['title']}", file=sys.stderr)
 
-            lyrics = find_file(folder, num, ".txt")
+            lyrics = find_file(folder, num, [".txt"], exclude=[".info.txt"])
             if lyrics:
                 song["lyrics"] = upload(lyrics, "raw")
 
@@ -86,7 +94,7 @@ def main():
             if youtube:
                 song["youtube"] = youtube
 
-            lrc = find_file(folder, num, ".lrc")
+            lrc = find_file(folder, num, [".lrc"])
             if lrc:
                 song["lrc"] = upload(lrc, "raw")
 
