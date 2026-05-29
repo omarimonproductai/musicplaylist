@@ -14,6 +14,10 @@ on:
       title:
         description: "Visible playlist title"
         required: true
+      front:
+        description: "Add this playlist at the top of the selector"
+        type: boolean
+        default: false
 
 jobs:
   build:
@@ -36,7 +40,7 @@ jobs:
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: |
-          python3 tools/build_playlist.py "${{ inputs.slug }}" --title "${{ inputs.title }}"
+          python3 tools/build_playlist.py "${{ inputs.slug }}" --title "${{ inputs.title }}" ${{ inputs.front && '--front' || '' }}
 
       - name: Commit generated playlist
         run: |

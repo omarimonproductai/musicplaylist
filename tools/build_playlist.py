@@ -50,6 +50,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("slug", help="Playlist slug (folder name and JSON filename)")
     parser.add_argument("--title", required=True, help="Visible playlist title")
+    parser.add_argument("--front", action="store_true",
+                        help="Add the slug at the top of index.json instead of the end")
     args = parser.parse_args()
 
     if os.environ.get("CLOUDINARY_URL"):
@@ -110,7 +112,7 @@ def main():
     with open(index_path, encoding="utf-8") as fh:
         index = json.load(fh)
     if args.slug not in index:
-        index.append(args.slug)
+        index.insert(0, args.slug) if args.front else index.append(args.slug)
         with open(index_path, "w", encoding="utf-8") as fh:
             json.dump(index, fh, indent=2, ensure_ascii=False)
             fh.write("\n")
