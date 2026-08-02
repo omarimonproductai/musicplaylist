@@ -5,38 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Playlist</title>
   <link rel="icon" href="favicon.svg">
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #1a1a2e;
-      color: #e0e0e0;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1 { color: #a8d8ea; border-bottom: 2px solid #a8d8ea; padding-bottom: 10px; }
-    ol { padding-left: 30px; }
-    li { padding: 6px 0; font-size: 1rem; }
-    a { color: #f7cac9; text-decoration: none; transition: color 0.2s; }
-    a:hover { color: #fff; text-decoration: underline; }
-    .unavailable { color: #555; cursor: default; }
-    .top-nav { margin-bottom: 18px; }
-    .back {
-      display: inline-block;
-      color: #f7cac9;
-      text-decoration: none;
-      font-size: 0.78rem;
-      border: 1px solid #f7cac9;
-      padding: 4px 10px;
-      border-radius: 20px;
-      transition: background 0.18s, color 0.18s;
-      white-space: nowrap;
-    }
-    .back:hover { background: #f7cac9; color: #1a1a2e; text-decoration: none; }
-
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-playlist">
   <nav class="top-nav">
     <a class="back" href="playlist_selector.html">&#8592; Playlists</a>
   </nav>
@@ -63,5 +34,6 @@
         });
       });
   </script>
+  
 </body>
 </html>
