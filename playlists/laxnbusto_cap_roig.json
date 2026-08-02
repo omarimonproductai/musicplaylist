@@ -3,7 +3,7 @@
     "songs": [
         {
             "num": "01",
-            "title": "La meva terra es el mar",
+            "title": "La meva terra és el mar",
             "artist": "Lax'n'Busto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785688521/laxnbusto_cap_roig/01_-_La_meva_terra_es_el_mar.mp4",
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785688523/laxnbusto_cap_roig/01_-_La_meva_terra_es_el_mar.txt",
@@ -21,7 +21,7 @@
         },
         {
             "num": "03",
-            "title": "Mes que la meva sang",
+            "title": "Més que la meva sang",
             "artist": "Lax'n'Busto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785688528/laxnbusto_cap_roig/03_-_Mes_que_la_meva_sang.mp4",
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785688529/laxnbusto_cap_roig/03_-_Mes_que_la_meva_sang.txt",
@@ -30,7 +30,7 @@
         },
         {
             "num": "04",
-            "title": "Que boig el mon",
+            "title": "Que boig el món",
             "artist": "Lax'n'Busto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785688530/laxnbusto_cap_roig/04_-_Que_boig_el_mon.mp4",
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785688531/laxnbusto_cap_roig/04_-_Que_boig_el_mon.txt",
@@ -75,7 +75,7 @@
         },
         {
             "num": "09",
-            "title": "La cançó del pages",
+            "title": "La cançó del pagès",
             "artist": "Lax'n'Busto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785688539/laxnbusto_cap_roig/09_-_El_pages.mp4",
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785688540/laxnbusto_cap_roig/09_-_El_pages.txt",
@@ -147,7 +147,7 @@
         },
         {
             "num": "17",
-            "title": "Llencat",
+            "title": "Llença't",
             "artist": "Lax'n'Busto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785688555/laxnbusto_cap_roig/17_-_Llencat.mp4",
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785688556/laxnbusto_cap_roig/17_-_Llencat.txt",
@@ -156,7 +156,7 @@
         },
         {
             "num": "18",
-            "title": "Miami beach",
+            "title": "Miami Beach",
             "artist": "Lax'n'Busto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785688557/laxnbusto_cap_roig/18_-_Miami_beach.mp4",
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785688558/laxnbusto_cap_roig/18_-_Miami_beach.txt",
