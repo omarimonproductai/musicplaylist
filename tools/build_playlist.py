@@ -41,8 +41,19 @@ def find_file(folder, num, exts, exclude=()):
     return None
 
 
-def upload(path, resource_type):
-    res = cloudinary.uploader.upload(path, resource_type=resource_type)
+def upload(path, resource_type, folder):
+    # use_filename + unique_filename=False keep the original filename as the
+    # Cloudinary public_id (instead of a random string); folder groups each
+    # playlist's assets and prevents same-named files across playlists from
+    # overwriting each other.
+    res = cloudinary.uploader.upload(
+        path,
+        resource_type=resource_type,
+        folder=folder,
+        use_filename=True,
+        unique_filename=False,
+        overwrite=True,
+    )
     return res["secure_url"]
 
 
@@ -84,13 +95,13 @@ def main():
                 # player.html derives the playable URL by swapping .mp4 -> .mp3,
                 # so store the audio URL with a .mp4 extension (Cloudinary
                 # transcodes the source on delivery).
-                song["audio"] = re.sub(r"\.[A-Za-z0-9]+$", ".mp4", upload(audio, "video"))
+                song["audio"] = re.sub(r"\.[A-Za-z0-9]+$", ".mp4", upload(audio, "video", args.slug))
             else:
                 print(f"  ! no audio for {num} {song['title']}", file=sys.stderr)
 
             lyrics = find_file(folder, num, [".txt"], exclude=[".info.txt"])
             if lyrics:
-                song["lyrics"] = upload(lyrics, "raw")
+                song["lyrics"] = upload(lyrics, "raw", args.slug)
 
             youtube = (row.get("youtube") or "").strip()
             if youtube:
@@ -98,7 +109,7 @@ def main():
 
             lrc = find_file(folder, num, [".lrc"])
             if lrc:
-                song["lrc"] = upload(lrc, "raw")
+                song["lrc"] = upload(lrc, "raw", args.slug)
 
             print(f"  ok {num} {song['title']}")
             songs.append(song)
