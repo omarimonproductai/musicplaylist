@@ -59,11 +59,12 @@ http://localhost:8000/playlist_selector.html
 
 ## 3. Crear una playlist nova (guia pas a pas)
 
-### Pas 1 — Tria el slug
+### Pas 1 — Tria el slug - JO
 
 Un nom curt sense espais ni accents. Exemples: `ligabue`, `laxnbusto_cap_roig`.
+Això ho penso jo i decideixo el nom que em doni la gana, sense espais en blanc.
 
-### Pas 2 — Prepara la carpeta `incoming/<slug>/`
+### Pas 2 — Prepara la carpeta `incoming/<slug>/` - JO
 
 Crea la carpeta i posa-hi els fitxers de cada cançó. **Cada cançó es lliga als
 seus fitxers pel prefix numèric** (`01`, `02`, …), que ha de coincidir amb la
@@ -78,6 +79,8 @@ incoming/<slug>/
 ├── 02 - ...
 ```
 
+*** IMPORTANT al carregar els .m4a potser pesen massa. Pujar-los en grups de 10 o de 8.
+
 Regles del lligam de fitxers:
 
 - **Àudio** (`.m4a` o `.mp4`): obligatori. Sense àudio, la cançó apareix però no
@@ -88,7 +91,7 @@ Regles del lligam de fitxers:
 - N'hi ha prou que el nom **comenci** amb el número (`01 - qualsevol cosa.m4a`);
   la resta del nom és lliure.
 
-### Pas 3 — Escriu el `manifest.csv`
+### Pas 3 — Escriu el `manifest.csv` - Això ho fa Claude CODE
 
 Capçalera obligatòria, una fila per cançó:
 
@@ -104,7 +107,7 @@ num,title,artist,youtube
 - `youtube`: enllaç del vídeo (opcional; deixa'l buit si no n'hi ha).
 - Fitxer en **UTF-8**. No cal cometes si el text no conté comes.
 
-### Pas 4 — Genera la llista
+### Pas 4 — Genera la llista - Usar opción A
 
 Cal el compte de Cloudinary. Hi ha **dues maneres** (fan exactament el mateix:
 pugen els mèdia a Cloudinary, creen `playlists/<slug>.json` i afegeixen el slug a
