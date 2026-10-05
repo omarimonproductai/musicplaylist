@@ -1,4 +1,209 @@
 {
     "title": "Oques Grasses - Barcelona 07/10/2026",
-    "songs": []
+    "songs": [
+        {
+            "num": "01",
+            "title": "Molta tralla",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218119/oques_grasses/01_-_Molta_tralla.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218121/oques_grasses/01_-_Molta_tralla.txt",
+            "youtube": "https://www.youtube.com/watch?v=ljMiXbl5Mrk"
+        },
+        {
+            "num": "02",
+            "title": "Bambi",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218122/oques_grasses/02_-_Bambi.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218124/oques_grasses/02_-_Bambi.txt",
+            "youtube": "https://www.youtube.com/watch?v=Xh8W8pSs7t8",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218124/oques_grasses/02_-_Bambi.lrc"
+        },
+        {
+            "num": "03",
+            "title": "Petar-ho",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218125/oques_grasses/03_-_Petar-ho.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218126/oques_grasses/03_-_Petar-ho.txt",
+            "youtube": "https://www.youtube.com/watch?v=8MhPSHoBwfk"
+        },
+        {
+            "num": "04",
+            "title": "Gossejar",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218127/oques_grasses/04_-_Gossejar.mp4",
+            "youtube": "https://www.youtube.com/watch?v=-ZSe0TYfi-Y"
+        },
+        {
+            "num": "05",
+            "title": "Sta Guai",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218128/oques_grasses/05_-_Sta_guai.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218128/oques_grasses/05_-_Sta_guai.txt",
+            "youtube": "https://www.youtube.com/watch?v=M54wAeeE4X0",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218129/oques_grasses/05_-_Sta_guai.lrc"
+        },
+        {
+            "num": "06",
+            "title": "Com està el pati",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218130/oques_grasses/06_-_Com_esta_el_pati.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218131/oques_grasses/06_-_Com_esta_el_pati.txt",
+            "youtube": "https://www.youtube.com/watch?v=mDa6tvbnZsQ",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218132/oques_grasses/06_-_Com_esta_el_pati.lrc"
+        },
+        {
+            "num": "07",
+            "title": "John Brown",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218132/oques_grasses/07_-_John_Brown.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218133/oques_grasses/07_-_John_Brown.txt",
+            "youtube": "https://www.youtube.com/watch?v=1Pmss-5qb5o",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218134/oques_grasses/07_-_John_Brown.lrc"
+        },
+        {
+            "num": "08",
+            "title": "Bancals",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218134/oques_grasses/08_-_Bancals.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218135/oques_grasses/08_-_Bancals.txt",
+            "youtube": "https://www.youtube.com/watch?v=vJAzsOHHSnQ",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218136/oques_grasses/08_-_Bancals.lrc"
+        },
+        {
+            "num": "09",
+            "title": "Cul",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218136/oques_grasses/09_-_Cul.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218137/oques_grasses/09_-_Cul.txt",
+            "youtube": "https://www.youtube.com/watch?v=6fBuSPGxjwQ",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218137/oques_grasses/09_-_Cul.lrc"
+        },
+        {
+            "num": "10",
+            "title": "Toca",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218139/oques_grasses/10_-_Toca.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218139/oques_grasses/10_-_Toca.txt",
+            "youtube": "https://www.youtube.com/watch?v=T-fVXh2KHxM",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218140/oques_grasses/10_-_Toca.lrc"
+        },
+        {
+            "num": "11",
+            "title": "Passos importants",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218141/oques_grasses/11_-_Passos_importants.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218142/oques_grasses/11_-_Passos_importants.txt",
+            "youtube": "https://www.youtube.com/watch?v=C9O1NvoWbrA",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218142/oques_grasses/11_-_Passos_importants.lrc"
+        },
+        {
+            "num": "12",
+            "title": "Sort de tu",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218143/oques_grasses/12_-_Sort_de_tu.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218144/oques_grasses/12_-_Sort_de_tu.txt",
+            "youtube": "https://www.youtube.com/watch?v=cyQz_HDm-Is"
+        },
+        {
+            "num": "13",
+            "title": "Elefants",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218144/oques_grasses/13_-_Elefants.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218145/oques_grasses/13_-_Elefants.txt",
+            "youtube": "https://www.youtube.com/watch?v=YVXaSiroAA8"
+        },
+        {
+            "num": "14",
+            "title": "Com el dia i la nit",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218146/oques_grasses/14_-_Com_el_dia_i_la_nit.mp4",
+            "youtube": "https://www.youtube.com/watch?v=F8QeWZKMp0U"
+        },
+        {
+            "num": "15",
+            "title": "Jubilar-me",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218147/oques_grasses/15_-_Jubilar-me.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218148/oques_grasses/15_-_Jubilar-me.txt",
+            "youtube": "https://www.youtube.com/watch?v=2GqyieyR3ds",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218148/oques_grasses/15_-_Jubilar-me.lrc"
+        },
+        {
+            "num": "16",
+            "title": "De Bonesh",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218149/oques_grasses/16_-_De_bonesh.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218150/oques_grasses/16_-_De_bonesh.txt",
+            "youtube": "https://www.youtube.com/watch?v=lpTGUFuEOQw",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218150/oques_grasses/16_-_De_bonesh.lrc"
+        },
+        {
+            "num": "17",
+            "title": "Serem ocells",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218151/oques_grasses/17_-_Serem_ocells.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218152/oques_grasses/17_-_Serem_ocells.txt",
+            "youtube": "https://www.youtube.com/watch?v=NrpRoMeQsp8"
+        },
+        {
+            "num": "18",
+            "title": "Pingpong",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218153/oques_grasses/18_-_Pingpong.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218154/oques_grasses/18_-_Pingpong.txt",
+            "youtube": "https://www.youtube.com/watch?v=0lifznH6HG0",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218154/oques_grasses/18_-_Pingpong.lrc"
+        },
+        {
+            "num": "19",
+            "title": "Cap amunt",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218155/oques_grasses/19_-_Cap_amunt.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218155/oques_grasses/19_-_Cap_amunt.txt",
+            "youtube": "https://www.youtube.com/watch?v=i5MLJMobBRc",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218156/oques_grasses/19_-_Cap_amunt.lrc"
+        },
+        {
+            "num": "20",
+            "title": "In the Night",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218157/oques_grasses/20_-_In_the_Night.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218157/oques_grasses/20_-_In_the_Night.txt",
+            "youtube": "https://www.youtube.com/watch?v=65elkzrfwJ0",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218158/oques_grasses/20_-_In_the_Night.lrc"
+        },
+        {
+            "num": "21",
+            "title": "Bye bye",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218158/oques_grasses/21_-_Bye_bye.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218159/oques_grasses/21_-_Bye_bye.txt",
+            "youtube": "https://www.youtube.com/watch?v=-2SxzSAwabM"
+        },
+        {
+            "num": "22",
+            "title": "Córrer pels camps",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791221324/oques_grasses/22_-_Correr_pels_camps.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791221325/oques_grasses/22_-_Correr_pels_camps.txt",
+            "youtube": "https://www.youtube.com/watch?v=wzklKdxS5BU",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791221325/oques_grasses/22_-_Correr_pels_camps.lrc"
+        },
+        {
+            "num": "23",
+            "title": "Torno a ser jo",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791221325/oques_grasses/23_-_Torno_a_ser_jo.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791221328/oques_grasses/23_-_Torno_a_ser_jo.txt",
+            "youtube": "https://www.youtube.com/watch?v=BBRyWDQmCXw"
+        },
+        {
+            "num": "24",
+            "title": "La gent que estimo",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791221328/oques_grasses/24_-_La_gent_que_estimo.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791221329/oques_grasses/24_-_La_gent_que_estimo.txt",
+            "youtube": "https://www.youtube.com/watch?v=yGO3UPPuVKs"
+        }
+    ]
 }
