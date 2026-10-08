@@ -2,6 +2,15 @@
     "title": "Oques Grasses - Barcelona 07/10/2026",
     "songs": [
         {
+            "num": "22",
+            "title": "Córrer pels camps",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791221324/oques_grasses/22_-_Correr_pels_camps.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791221325/oques_grasses/22_-_Correr_pels_camps.txt",
+            "youtube": "https://www.youtube.com/watch?v=wzklKdxS5BU",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791221325/oques_grasses/22_-_Correr_pels_camps.lrc"
+        },
+        {
             "num": "03",
             "title": "Petar-ho",
             "artist": "Oques Grasses",
@@ -27,6 +36,15 @@
             "youtube": "https://www.youtube.com/watch?v=YVXaSiroAA8"
         },
         {
+            "num": "25",
+            "title": "Cara de cul",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791465712/oques_grasses/25_-_Cara_de_cul.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791465713/oques_grasses/25_-_Cara_de_cul.txt",
+            "youtube": "https://www.youtube.com/watch?v=9BN0azFZGhg",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791465713/oques_grasses/25_-_Cara_de_cul.lrc"
+        },
+        {
             "num": "08",
             "title": "Bancals",
             "artist": "Oques Grasses",
@@ -36,6 +54,15 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218136/oques_grasses/08_-_Bancals.lrc"
         },
         {
+            "num": "26",
+            "title": "Cançó de l'aire",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791465716/oques_grasses/26_-_Canco_de_l_aire.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791465716/oques_grasses/26_-_Canco_de_l_aire.txt",
+            "youtube": "https://www.youtube.com/watch?v=zxLkjV0YpKA",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791465717/oques_grasses/26_-_Canco_de_l_aire.lrc"
+        },
+        {
             "num": "06",
             "title": "Com està el pati",
             "artist": "Oques Grasses",
@@ -43,6 +70,15 @@
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218131/oques_grasses/06_-_Com_esta_el_pati.txt",
             "youtube": "https://www.youtube.com/watch?v=mDa6tvbnZsQ",
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218132/oques_grasses/06_-_Com_esta_el_pati.lrc"
+        },
+        {
+            "num": "27",
+            "title": "Cavall estable",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791465719/oques_grasses/27_-_Cavall_estable.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791465720/oques_grasses/27_-_Cavall_estable.txt",
+            "youtube": "https://www.youtube.com/watch?v=aR25_pHCNjI",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791465720/oques_grasses/27_-_Cavall_estable.lrc"
         },
         {
             "num": "07",
@@ -87,6 +123,15 @@
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218119/oques_grasses/01_-_Molta_tralla.mp4",
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218121/oques_grasses/01_-_Molta_tralla.txt",
             "youtube": "https://www.youtube.com/watch?v=ljMiXbl5Mrk"
+        },
+        {
+            "num": "18",
+            "title": "Pingpong",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218153/oques_grasses/18_-_Pingpong.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218154/oques_grasses/18_-_Pingpong.txt",
+            "youtube": "https://www.youtube.com/watch?v=0lifznH6HG0",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218154/oques_grasses/18_-_Pingpong.lrc"
         },
         {
             "num": "14",
@@ -144,6 +189,15 @@
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791221328/oques_grasses/24_-_La_gent_que_estimo.mp4",
             "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791221329/oques_grasses/24_-_La_gent_que_estimo.txt",
             "youtube": "https://www.youtube.com/watch?v=yGO3UPPuVKs"
+        },
+        {
+            "num": "16",
+            "title": "De Bonesh",
+            "artist": "Oques Grasses",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1791218149/oques_grasses/16_-_De_bonesh.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218150/oques_grasses/16_-_De_bonesh.txt",
+            "youtube": "https://www.youtube.com/watch?v=lpTGUFuEOQw",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1791218150/oques_grasses/16_-_De_bonesh.lrc"
         },
         {
             "num": "12",
