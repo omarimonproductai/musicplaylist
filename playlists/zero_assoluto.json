@@ -2,61 +2,7 @@
     "title": "Zero Assoluto - Bra 21/06/2026",
     "songs": [
         {
-            "num": "01",
-            "title": "Quello che mi davi tu",
-            "artist": "Zero Assoluto",
-            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689984/zero_assoluto/01_-_Quello_che_mi_davi_tu.mp4",
-            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689984/zero_assoluto/01_-_Quello_che_mi_davi_tu.txt",
-            "youtube": "https://www.youtube.com/watch?v=_yx4UJxVxGk",
-            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689985/zero_assoluto/01_-_Quello_che_mi_davi_tu.lrc"
-        },
-        {
-            "num": "02",
-            "title": "Per Dimenticare",
-            "artist": "Zero Assoluto",
-            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689985/zero_assoluto/02_-_Per_Dimenticare.mp4",
-            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689986/zero_assoluto/02_-_Per_Dimenticare.txt",
-            "youtube": "https://www.youtube.com/watch?v=6I_gY_fyY_8",
-            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689986/zero_assoluto/02_-_Per_Dimenticare.lrc"
-        },
-        {
-            "num": "03",
-            "title": "Svegliarsi la mattina",
-            "artist": "Zero Assoluto",
-            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689987/zero_assoluto/03_-_Svegliarsi_la_mattina.mp4",
-            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689988/zero_assoluto/03_-_Svegliarsi_la_mattina.txt",
-            "youtube": "https://www.youtube.com/watch?v=999tdck12S8",
-            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689988/zero_assoluto/03_-_Svegliarsi_la_mattina.lrc"
-        },
-        {
-            "num": "04",
-            "title": "Semplicemente",
-            "artist": "Zero Assoluto",
-            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689988/zero_assoluto/04_-_Semplicemente.mp4",
-            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689989/zero_assoluto/04_-_Semplicemente.txt",
-            "youtube": "https://www.youtube.com/watch?v=4cuqcMss7hw",
-            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689990/zero_assoluto/04_-_Semplicemente.lrc"
-        },
-        {
-            "num": "05",
-            "title": "Di me e di te",
-            "artist": "Zero Assoluto",
-            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689990/zero_assoluto/05_-_Di_me_e_di_te.mp4",
-            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689991/zero_assoluto/05_-_Di_me_e_di_te.txt",
-            "youtube": "https://www.youtube.com/watch?v=1Z12aqTfu6A",
-            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689991/zero_assoluto/05_-_Di_me_e_di_te.lrc"
-        },
-        {
-            "num": "06",
-            "title": "Meglio così",
-            "artist": "Zero Assoluto",
-            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689991/zero_assoluto/06_-_Meglio_cosi.mp4",
-            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689992/zero_assoluto/06_-_Meglio_cosi.txt",
-            "youtube": "https://www.youtube.com/watch?v=0x73fX_abCg",
-            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689992/zero_assoluto/06_-_Meglio_cosi.lrc"
-        },
-        {
-            "num": "07",
+            "num": "1",
             "title": "Perdermi",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689993/zero_assoluto/07_-_Perdermi.mp4",
@@ -65,7 +11,16 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689994/zero_assoluto/07_-_Perdermi.lrc"
         },
         {
-            "num": "08",
+            "num": "2",
+            "title": "Quello che mi davi tu",
+            "artist": "Zero Assoluto",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689984/zero_assoluto/01_-_Quello_che_mi_davi_tu.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689984/zero_assoluto/01_-_Quello_che_mi_davi_tu.txt",
+            "youtube": "https://www.youtube.com/watch?v=_yx4UJxVxGk",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689985/zero_assoluto/01_-_Quello_che_mi_davi_tu.lrc"
+        },
+        {
+            "num": "3",
             "title": "Sei parte di me",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689995/zero_assoluto/08_-_Sei_parte_di_me.mp4",
@@ -74,7 +29,25 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689996/zero_assoluto/08_-_Sei_parte_di_me.lrc"
         },
         {
-            "num": "09",
+            "num": "4",
+            "title": "Meglio così",
+            "artist": "Zero Assoluto",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689991/zero_assoluto/06_-_Meglio_cosi.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689992/zero_assoluto/06_-_Meglio_cosi.txt",
+            "youtube": "https://www.youtube.com/watch?v=0x73fX_abCg",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689992/zero_assoluto/06_-_Meglio_cosi.lrc"
+        },
+        {
+            "num": "6",
+            "title": "Svegliarsi la mattina",
+            "artist": "Zero Assoluto",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689987/zero_assoluto/03_-_Svegliarsi_la_mattina.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689988/zero_assoluto/03_-_Svegliarsi_la_mattina.txt",
+            "youtube": "https://www.youtube.com/watch?v=999tdck12S8",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689988/zero_assoluto/03_-_Svegliarsi_la_mattina.lrc"
+        },
+        {
+            "num": "7",
             "title": "Grazie",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689996/zero_assoluto/09_-_Grazie.mp4",
@@ -83,7 +56,7 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689997/zero_assoluto/09_-_Grazie.lrc"
         },
         {
-            "num": "10",
+            "num": "8",
             "title": "Appena prima di partire",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689998/zero_assoluto/10_-_Appena_prima_di_partire.mp4",
@@ -92,7 +65,7 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689999/zero_assoluto/10_-_Appena_prima_di_partire.lrc"
         },
         {
-            "num": "11",
+            "num": "9",
             "title": "Cos'è normale",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689999/zero_assoluto/11_-_Cos_e_normale.mp4",
@@ -101,7 +74,34 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785690000/zero_assoluto/11_-_Cos_e_normale.lrc"
         },
         {
-            "num": "12",
+            "num": "10",
+            "title": "Per Dimenticare",
+            "artist": "Zero Assoluto",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689985/zero_assoluto/02_-_Per_Dimenticare.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689986/zero_assoluto/02_-_Per_Dimenticare.txt",
+            "youtube": "https://www.youtube.com/watch?v=6I_gY_fyY_8",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689986/zero_assoluto/02_-_Per_Dimenticare.lrc"
+        },
+        {
+            "num": "91",
+            "title": "Semplicemente",
+            "artist": "Zero Assoluto",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689988/zero_assoluto/04_-_Semplicemente.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689989/zero_assoluto/04_-_Semplicemente.txt",
+            "youtube": "https://www.youtube.com/watch?v=4cuqcMss7hw",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689990/zero_assoluto/04_-_Semplicemente.lrc"
+        },
+        {
+            "num": "92",
+            "title": "Di me e di te",
+            "artist": "Zero Assoluto",
+            "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785689990/zero_assoluto/05_-_Di_me_e_di_te.mp4",
+            "lyrics": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689991/zero_assoluto/05_-_Di_me_e_di_te.txt",
+            "youtube": "https://www.youtube.com/watch?v=1Z12aqTfu6A",
+            "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689991/zero_assoluto/05_-_Di_me_e_di_te.lrc"
+        },
+        {
+            "num": "93",
             "title": "Mezz'ora",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785690001/zero_assoluto/12_-_Mezz_ora.mp4",
@@ -110,7 +110,7 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785690002/zero_assoluto/12_-_Mezz_ora.lrc"
         },
         {
-            "num": "13",
+            "num": "94",
             "title": "Scappare",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785690002/zero_assoluto/13_-_Scappare.mp4",
@@ -119,7 +119,7 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785690003/zero_assoluto/13_-_Scappare.lrc"
         },
         {
-            "num": "14",
+            "num": "95",
             "title": "All'improvviso",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785690004/zero_assoluto/14_-_All_improvviso.mp4",
@@ -128,7 +128,7 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785690005/zero_assoluto/14_-_All_improvviso.lrc"
         },
         {
-            "num": "15",
+            "num": "96",
             "title": "Psicologia sociale",
             "artist": "Zero Assoluto",
             "audio": "https://res.cloudinary.com/dmtnhepkp/video/upload/v1785690006/zero_assoluto/15_-_Psicologia_sociale.mp4",
