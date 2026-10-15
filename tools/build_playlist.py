@@ -86,9 +86,11 @@ def main():
 
     songs = []
     with open(manifest, newline="", encoding="utf-8") as fh:
-        for row in csv.DictReader(fh):
+        for pos, row in enumerate(csv.DictReader(fh), start=1):
             num = row["num"].strip()
-            song = {"num": num, "title": row["title"].strip(), "artist": row["artist"].strip()}
+            # num is the file-matching prefix; the JSON stores the sequential
+            # playlist position, which is what playlist.html displays.
+            song = {"num": f"{pos:02d}", "title": row["title"].strip(), "artist": row["artist"].strip()}
 
             audio = find_file(folder, num, [".mp4", ".m4a"])
             if audio:

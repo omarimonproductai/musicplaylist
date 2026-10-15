@@ -25,6 +25,8 @@
         const ol = document.getElementById('list');
         data.songs.forEach((s, i) => {
           const li = document.createElement('li');
+          const n = parseInt(s.num, 10);
+          if (!isNaN(n)) li.value = n;
           if (s.audio) {
             li.innerHTML = `<a href="player.html?playlist=${playlistName}&idx=${i}">${s.title}</a>`;
           } else {
