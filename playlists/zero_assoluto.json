@@ -38,6 +38,15 @@
             "lrc": "https://res.cloudinary.com/dmtnhepkp/raw/upload/v1785689992/zero_assoluto/06_-_Meglio_cosi.lrc"
         },
         {
+            "num": "5",
+            "title": "Cialde",
+            "artist": "Zero Assoluto",
+            "audio": "media/zero_assoluto/cialde.m4a",
+            "lyrics": "media/zero_assoluto/cialde.txt",
+            "youtube": "https://www.youtube.com/watch?v=rfli8BObE20",
+            "lrc": "media/zero_assoluto/cialde.lrc"
+        },
+        {
             "num": "6",
             "title": "Svegliarsi la mattina",
             "artist": "Zero Assoluto",
